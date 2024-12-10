@@ -51,9 +51,9 @@ Chill Gamer is a user-friendly platform for gamers to explore and share reviews.
 
 5. Open your browser at `http://localhost:3000`.
 
-## Live Demo
+## Live Demo of The Server
 
-Explore the live version of Chill Gamer: [Live Demo](https://chill-gamer-646e9.web.app/)
+Explore the live version of Chill Gamer: [Live Demo](https://chill-gamer-server-updated.vercel.app/)
 
 ## Challenges Implemented
 
