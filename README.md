@@ -53,7 +53,7 @@ Chill Gamer is a user-friendly platform for gamers to explore and share reviews.
 
 ## Live Demo of The Server
 
-Explore the live version of Chill Gamer: [Live Demo](https://chill-gamer-server-updated.vercel.app/)
+Explore the server side of Chill Gamer: [Live Demo](https://chill-gamer-server-updated.vercel.app/)
 
 ## Challenges Implemented
 
