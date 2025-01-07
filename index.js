@@ -69,7 +69,13 @@ async function run() {
         })
 
         app.get('/highestratedgames', async (req, res) => {
-            const cursor = reviewCollection.find().sort({ rating: -1 }).limit(6);
+            const cursor = reviewCollection.find().sort({ rating: -1 }).limit(4);
+            const result = await cursor.toArray();
+            res.send(result);
+        })
+
+        app.get('/highestratedgames_md', async (req, res) => {
+            const cursor = reviewCollection.find().sort({ rating: -1 }).limit(3);
             const result = await cursor.toArray();
             res.send(result);
         })
@@ -91,6 +97,13 @@ async function run() {
         app.post('/watchlist', async (req, res) => {
             const newItem = req.body;
             const result = await watchListItemsCollection.insertOne(newItem);
+            res.send(result);
+        })
+
+        app.delete('/watchlist/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id) };
+            const result = await watchListItemsCollection.deleteOne(query);
             res.send(result);
         })
 
